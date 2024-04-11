@@ -10,48 +10,43 @@
 
 <header class="main-header">
     <h1>Storm Productions</h1>
+    <nav class="header-nav">
+        <button type="menu" class="header_Button" onclick="window.location.href='./index.html'">Home</button>
+        <button type="menu" class="header_Button">Documentations</button>
+        <button type="menu" class="header_Button" onclick="window.location.href='./Credits/index.html'">Credits</button>
+        <button type="menu" class="header_Button" onclick="window.location.href='./TOS/index.html'">Terms of Service</button>
+    </nav>
 </header>
 
-<br/>
-<br/>
+<div class="content">
+    <div class="sidenav">
+        <a href="#Information">Information</a>
+        <a href="#StormAdmin">Storm Admin</a>
+        <a class="sidesubbutton" href="#StormAdmin">Storm Admin</a>
+    </div>
 
-<header class="header">
-    <button type="menu" class="header_Button" onclick="window.location.href='./index.html'">Home</button>
-     <button type="menu" class="header_Button"> Documentations </button>
-     <button type="menu" class="header_Button" onclick="window.location.href='./Credits/index.html'"> Credits </button>
-    <button type="menu" class="header_Button" onclick="window.location.href='./TOS/index.html'">Terms of Service</button>
-</header>
+    <div id="Information" class="main">
+        <h2>"Providing solutions for you!"</h2>
+        <h3>Commands</h3>
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Ban</td>
+                <td>Permanently banishes the selected User!</td>
+            </tr>
+            <tr>
+                <td>/info</td>
+                <td>Displays information about the bot</td>
+            </tr>
+        </table>
+    </div>
 
-<div class="sidenav">
-  <a href="#Information">Information</a>
-  <a href="#StormAdmin">Storm Admin</a>
-
-  <a class = "sidesubbutton" href="#StormAdmin">Storm Admin</a>
-</div>
-
-<div id="Information" class="main">
-    <h2>"Providing solutions for you!"</h2>
-
-    <h3>Commands</h3>
-
-    <table>
-        <tr>
-            <th>Command</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>Ban</td>
-            <td>Permanently banishes the selected User!</td>
-        </tr>
-        <tr>
-            <td>/info</td>
-            <td>Displays information about the bot</td>
-        </tr>
-    </table>
-</div>
-
-<div id="StormAdmin" class="main" style="display: none;">
-    <h2>"Admin section for Storm Productions"</h2>
+    <div id="StormAdmin" class="main" style="display: none;">
+        <h2>"Admin section for Storm Productions"</h2>
+    </div>
 </div>
 
 <script>
