@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Documentations.css">
+    <title>Storm Productions</title>
+</head>
+<body>
+
+<header class="main-header">
+    <h1>Storm Productions</h1>
+</header>
+
+<br/>
+<br/>
+
+<div class="sidenav">
+  <a href="#Information">Information</a>
+  <a href="#StormAdmin">Storm Admin</a>
+
+  <a class = "sidesubbutton" href="#StormAdmin">Storm Admin</a>
+</div>
+
+<div id="Information" class="main">
+    <h2>"Providing solutions for you!"</h2>
+
+    <h3>Commands</h3>
+
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Ban</td>
+            <td>Permanently banishes the selected User!</td>
+        </tr>
+        <tr>
+            <td>/info</td>
+            <td>Displays information about the bot</td>
+        </tr>
+    </table>
+</div>
+
+<div id="StormAdmin" class="main" style="display: none;">
+    <h2>"Admin section for Storm Productions"</h2>
+</div>
+
+<script>
+    document.querySelectorAll('.sidenav a').forEach(function(anchor) {
+        anchor.addEventListener('click', function(event) {
+            event.preventDefault();
+            var targetId = this.getAttribute('href').substring(1);
+            document.querySelectorAll('.main').forEach(function(div) {
+                if (div.id === targetId) {
+                    div.style.display = 'block';
+                } else {
+                    div.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
