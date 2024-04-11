@@ -4,28 +4,6 @@ body {
     padding: 0;
 }
 
-.header {
-    background-color: #fff; /* White background for header */
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
-}
-
-.header_Button {
-    background-color: transparent;
-    border: none;
-    color: #333; /* Dark button text color */
-    font-size: 16px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.header_Button:hover {
-    color: #007bff; /* Change button text color on hover */
-}
-
 .main-header {
     text-align: center;
     background-color: #24292e;
@@ -37,14 +15,38 @@ body {
     margin: 0;
 }
 
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_Button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.header_Button:hover {
+    color: #007bff;
+}
+
+.content {
+    margin-top: 60px;
+    display: flex;
+}
+
 .sidenav {
     width: 240px;
     position: fixed;
-    top: 0;
+    top: 60px;
     left: 0;
-    height: 100%;
+    height: calc(100% - 60px);
     background: #f6f8fa;
-    padding-top: 60px;
+    padding-top: 20px;
     overflow-x: hidden;
     z-index: 1;
     border-right: 1px solid #e1e4e8;
@@ -72,11 +74,12 @@ body {
 }
 
 .main {
-    margin-left: 240px;
+    flex: 1;
     padding: 20px;
 }
 
-.main h2, .main h3 {
+.main h2,
+.main h3 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 24px;
     color: #333;
